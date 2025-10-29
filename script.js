@@ -44,7 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const socialBtns = document.querySelectorAll('.social-btn');
     socialBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
-            e.preventDefault();
+            // Don't prevent default for Instagram button to allow external link
+            if (!this.classList.contains('insta-btn')) {
+                e.preventDefault();
+            }
+            
             this.classList.add('clicked');
             // Create ripple effect
             const ripple = document.createElement('span');

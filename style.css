@@ -206,6 +206,19 @@ body {
     box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
     border: none;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.insta-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.insta-icon {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: bold;
 }
 
 .social-btn:hover {
